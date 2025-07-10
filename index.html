@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sello Group and Consulting</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-sky-600 to-emerald-700 text-white p-4 shadow-lg rounded-b-3xl">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <!-- Logo -->
+            <div class="mb-4 md:mb-0">
+                <img src="Images/logo.png" alt="Sello Group and Consulting Logo" class="h-16 md:h-20 w-auto rounded-md object-contain">
+            </div>
+            <nav class="w-full md:w-auto">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-center">
+                    <li><a href="#about" class="hover:text-sky-200 transition duration-300 font-medium">About Us</a></li>
+                    <li><a href="#services" class="hover:text-sky-200 transition duration-300 font-medium">Services</a></li>
+                    <li><a href="#contact" class="hover:text-sky-200 transition duration-300 font-medium">Contact</a></li>
+                    <li><a href="#highlights" class="hover:text-sky-200 transition duration-300 font-medium">Highlights</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-background">
+        <!-- Slide 1: General Construction/Development -->
+        <div class="slide fade-slide active" style="background-image: url('Images/IMG-20250617-WA0012.jpg');"></div>
+        <!-- Slide 2: Drone Surveying -->
+        <div class="slide fade-slide" style="background-image: url('Images/IMG-20250617-WA0027.jpg');"></div>
+        <!-- Slide 3: Engineering Surveying -->
+        <div class="slide fade-slide" style="background-image: url('Images/IMG-20250617-WA0012.jpg');"></div>
+        <!-- Slide 4: Geospatial Data Analysis -->
+        <div class="slide fade-slide" style="background-image: url('Images/IMG-20250617-WA0005.jpg');"></div>
+
+        <div class="container mx-auto hero-content">
+            <h1 class="text-5xl font-extrabold mb-6 leading-tight">
+                Your Partner for Sustainable Development
+            </h1>
+            <p class="text-xl max-w-3xl mx-auto mb-8">
+                Delivering accurate, reliable, and innovative surveying solutions that support infrastructure growth across South Africa and beyond.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#services" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Explore Our Services
+                </a>
+                <a href="#contact" class="bg-emerald-300 hover:bg-emerald-400 text-emerald-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Quick Contact Section (Inspired by Tambank's intro section) -->
+    <section class="bg-white p-8 rounded-xl shadow-md mx-4 my-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center">
+            <!-- About Us Summary -->
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-bold text-sky-800 mb-4">About Sello Group</h2>
+                <p class="text-lg leading-relaxed text-gray-700">
+                     Sello Group and Consulting, our mission is to deliver accurate, reliable, and innovative surveying solutions that support sustainable development and infrastructure growth. We are committed to empowering our clients with high-quality data and expert consulting services that drive successful project outcomes across South Africa and beyond. Established in 2021 in Pretoria, South Africa.
+                </p>
+            </div>
+            <!-- Quick Contact / Location -->
+            <div class="bg-emerald-100 p-6 rounded-lg shadow-inner">
+                <h3 class="text-2xl font-semibold text-emerald-800 mb-4">Quick Contact</h3>
+                <p class="text-lg text-gray-700 mb-2"><i class="fas fa-phone-alt text-emerald-600 mr-2"></i> 073 233 8697</p>
+                <p class="text-lg text-gray-700 mb-4"><i class="fas fa-envelope text-emerald-600 mr-2"></i> bsello@ymail.com</p>
+                <p class="text-lg text-gray-700"><i class="fas fa-map-marker-alt text-emerald-600 mr-2"></i> Pretoria, South Africa</p>
+            </div>
+        </div>
+
+        <!-- Navigation dots for the carousel -->
+        <div class="dot-container">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+    <!-- Forging Success From Earth's Depths Section (Mimicking Tambank's "From Roots To Riches") -->
+    <section class="forging-success-section container mx-auto">
+        <div class="forging-success-content">
+            <h2 class="text-4xl font-bold text-sky-800 mb-6">
+                Forging Success from Earth's Depths
+            </h2>
+            <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                With a commitment to precision and innovation, Sello Group and Consulting transforms complex site data into actionable insights, laying the groundwork for robust and sustainable infrastructure. Our expert team leverages advanced methodologies to ensure every project's foundation is built on accurate and reliable information.
+            </p>
+            <a href="#highlights" class="inline-block mt-8 bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Learn More About Our Expertise
+            </a>
+        </div>
+        <div class="forging-success-image">
+            <img src="Images/Picture1.jpg" alt="Consulting Meeting" class="w-full h-auto object-cover rounded-md">
+        </div>
+    </section>
+
+
+    <!-- Services Section (Similar to Tambank's "Tailored Mining Services" grid) -->
+    <section id="services" class="py-16 px-6 bg-emerald-50 rounded-xl shadow-md mx-4 my-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-sky-800 mb-10">Tailored Surveying Services for Every Venture</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Item 1: Land Surveying -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="Images/IMG-20250617-WA0005.jpg" alt="Land Surveying Equipment" class="w-full h-40 object-cover rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/AEC6CF/FFFFFF?text=Land+Surveying';">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Land Surveying</h3>
+                    <p class="text-gray-700">Comprehensive and precise land and topographic surveys for various applications.</p>
+                </div>
+                <!-- Service Item 2: Engineering Surveys -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="Images/IMG-20250617-WA0030.jpg" alt="Engineering Surveys" class="w-full h-40 object-cover rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/87CEEB/FFFFFF?text=Engineering+Surveys+Fallback';">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Engineering Surveys</h3>
+                    <p class="text-gray-700">On-site data layout for construction, mapping, and compliance with high accuracy.</p>
+                </div>
+                <!-- Service Item 3: Geospatial Data Analysis -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="Images/Data picture.jpg" alt="Geospatial Data Analysis" class="w-full h-40 object-cover rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/6495ED/FFFFFF?text=Geospatial+Analysis+Fallback';">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Geospatial Data Analysis</h3>
+                    <p class="text-gray-700">Advanced use of GIS and spatial data analysis for informed decision-making.</p>
+                </div>
+                <!-- Service Item 4: Construction Layout Surveys -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="Images/IMG-20250617-WA0041.jpg" alt="Construction Layout Surveys" class="w-full h-40 object-cover rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/4682B4/FFFFFF?text=Construction+Layout+Fallback';">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Construction Layout Surveys</h3>
+                    <p class="text-gray-700">Detailed construction layout surveys to ensure precision and adherence to plans.</p>
+                </div>
+                <!-- Service Item 5: Aerial and Drone Surveys -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="Images/Drone.jpg" alt="Aerial and Drone Surveys" class="w-full h-40 object-cover rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/367588/FFFFFF?text=Drone+Surveys+Fallback';">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Aerial and Drone Surveys</h3>
+                    <p class="text-gray-700">Cutting-edge aerial and drone technology for efficient and accurate data collection.</p>
+                </div>
+                <!-- Service Item 6: Project Consulting & Advisory -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="Images/IMG-20250617-WA0035.jpg" alt="Project Consulting & Advisory" class="w-full h-40 object-cover rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/2E8B57/FFFFFF?text=Project+Consulting+Fallback';">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Project Consulting & Advisory</h3>
+                    <p class="text-700">Expert consulting and advisory services to guide your projects to success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights / Unique Selling Point Section -->
+    <section id="highlights" class="py-16 px-6 bg-white rounded-xl shadow-md mx-4 my-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-sky-800 mb-10">Why Choose Us?</h2>
+            <div class="max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
+                <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h3 class="text-3xl font-semibold text-gray-900 mb-4">Our Professional Credentials</h3>
+                        <p class="mb-4">
+                            Sello Group and Consulting is backed by a seasoned and registered Survey Technician, accredited by the **South African Geomatics Council (SAGC)**.
+                        </p>
+                        <p>
+                            This professional recognition ensures that all services meet national standards of quality, precision, and compliance, giving clients confidence that their projects are in safe, qualified hands.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-semibold text-gray-900 mb-4">Our Unique Selling Point</h3>
+                        <p class="mb-4">
+                            What sets Sello Group and Consulting apart is our combination of:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 pl-4">
+                            <li>Technical precision</li>
+                            <li>Personalized service</li>
+                            <li>Regulatory expertise</li>
+                        </ul>
+                        <p class="mt-4">
+                            We leverage modern surveying tools and methodologies while maintaining close, responsive communication with clients. With a certified professional leading our operations, we guarantee dependable results - delivered on time, every time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Market Section -->
+    <section id="target-market" class="py-16 px-6 bg-emerald-50 rounded-xl shadow-md mx-4 my-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-sky-800 mb-10">Who We Serve</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                    <i class="fas fa-building text-3xl text-emerald-600"></i>
+                    <p class="text-lg font-medium text-gray-800">Construction and Civil Engineering Companies</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                    <i class="fas fa-landmark text-3xl text-emerald-600"></i>
+                    <p class="text-lg font-medium text-gray-800">Government Departments and Municipalities</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                    <i class="fas fa-house-user text-3xl text-emerald-600"></i>
+                    <p class="text-lg font-medium text-gray-800">Real Estate Developers and Property Investors</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                    <i class="fas fa-pencil-ruler text-3xl text-emerald-600"></i>
+                    <p class="text-lg font-medium text-gray-800">Architects and Urban Planners</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                    <i class="fas fa-mountain text-3xl text-emerald-600"></i>
+                    <p class="text-lg font-medium text-gray-800">Mining and Agricultural Enterprises</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 bg-sky-700 text-white rounded-xl shadow-lg mx-4 my-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                We are ready to provide high-quality data and expert consulting services to drive your project's success. Contact us today!
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12 mb-10">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-phone-alt text-sky-200 text-3xl"></i>
+                    <span class="text-2xl font-semibold">073 233 8697</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-envelope text-sky-200 text-3xl"></i>
+                    <span class="text-2xl font-semibold">bsello@ymail.com</span>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="mt-12 mb-10 rounded-lg overflow-hidden shadow-xl max-w-2xl mx-auto">
+                <h3 class="text-2xl font-semibold mb-4">Find Us On The Map</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114948.33703551532!2d28.00647184288077!3d-25.74790076212558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95619c153f37b9%3A0x8a966838848e026!2sPretoria!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Google Map of Pretoria"
+                    class="rounded-lg"
+                ></iframe>
+            </div>
+
+            <!-- Simple Contact Form (Optional, but useful) -->
+            <div class="max-w-xl mx-auto bg-sky-800 p-8 rounded-lg shadow-xl mt-8">
+                <h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
+                <form>
+                    <div class="mb-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md bg-sky-700 text-white placeholder-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-300">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md bg-sky-700 text-white placeholder-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-300">
+                    </div>
+                    <div class="mb-6">
+                        <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-md bg-sky-700 text-white placeholder-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-300"></textarea>
+                    </div>
+                    <button type="submit" class="bg-emerald-300 hover:bg-emerald-400 text-emerald-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-emerald-900 text-white p-8 rounded-t-3xl shadow-lg mt-8">
+        <div class="container mx-auto text-center">
+            <p class="text-lg">&copy; 2025 Sello Group and Consulting. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
